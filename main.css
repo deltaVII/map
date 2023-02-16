@@ -16,8 +16,8 @@
 }
 
 .side-bar-item {
-    width: 160px;
-    height: 160px;
+    width: 5vmax;
+    height: 5vmax;
 
     display: flex;
     align-items: center;
