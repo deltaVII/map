@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+  <head>
+  <title>0.0.3</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+  <link href="favicon" type="image/x-icon">
+
+
+  </head>
+  <body>
+    <!-- #region side bar-->
+    <div class="side-bar">
+      <!-- Zoom buttons -->
+      <button class="side-bar-item" id="zoomIn">
+        <div class="plus"></div></button>
+
+      <div class="side-bar-item"><p id="zoomCounter"></p></div>
+
+      <button class="side-bar-item" id="zoomOut">
+          <div class="minus"></div></button>
+
+      <!-- floor buttos adn lables -->
+      <button class="side-bar-item" id="floorUp">
+          <div class="arrow-top"></div></button>
+
+      <div class="side-bar-item"><p id="floorCounter"></p></div>
+
+      <button class="side-bar-item" id="floorDown">
+          <div class="arrow-down"></div></button>
+    </div> 
+    <!-- #endregion side bar-->
+    <!-- #region map-->
+    <div id="map" class="map">
+      <div id="map-scrollpane-warp">
+        <div id="map-scrollpane">
+          <div id="svgcontainer">
+            <div id="karta"></div>
+            <!--
+            <svg width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="Gradient1">
+                  <stop offset="5%" stop-color="white"/>
+                  <stop offset="95%" stop-color="blue"/>
+                </linearGradient>
+                <linearGradient id="Gradient2" x1="0" x2="0" y1="0" y2="1">
+                  <stop offset="5%" stop-color="red"/>
+                  <stop offset="95%" stop-color="orange"/>
+                </linearGradient>
+            
+                <pattern id="Pattern" x="0" y="0" width=".25" height=".25">
+                  <rect x="0" y="0" width="50" height="50" fill="skyblue"/>
+                  <rect x="0" y="0" width="25" height="25" fill="url(#Gradient2)"/>
+                  <circle cx="25" cy="25" r="20" fill="url(#Gradient1)" fill-opacity="0.5"/>
+                </pattern>
+              </defs>
+            
+              <rect fill="url(#Pattern)" stroke="black" width="200" height="200"/>
+            </svg>
+          -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- #endregion map-->
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
