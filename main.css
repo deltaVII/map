@@ -9,12 +9,13 @@
 
 
 .side-bar {
+    left: 95vw;
     z-index: 10;
     position: absolute;
     display: flex;
     flex-direction: column;
 }
-
+/*60px*/
 .side-bar-item {
     width: 5vmax;
     height: 5vmax;
