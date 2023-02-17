@@ -9,9 +9,9 @@
 
 
 .side-bar {
-    left: 95vw;
+    float: right;
     z-index: 10;
-    position: absolute;
+    position: relative;
     display: flex;
     flex-direction: column;
 }
