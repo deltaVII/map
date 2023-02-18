@@ -133,3 +133,27 @@ document.addEventListener("touchend", setMouseDefault)
 
 handleZoom(0)
 //костыль :D
+
+//типо адаптивная верстка(на самом деле нет) 
+
+let windowLet=document.getElementsByClassName("side-bar-item")
+
+windowWi=window.innerWidth;
+console.log(windowWi);
+windowHe=window.innerHeight;
+console.log(windowHe);
+
+console.log(windowLet)
+if (windowHe>windowWi) {
+    for (let i=0; i!=6; i++) {
+    document.getElementsByClassName('side-bar-item')[i].style.height = "7vh";
+    document.getElementsByClassName('side-bar-item')[i].style.width = "7vh";
+}
+}
+else{
+    for (let i=0; i!=6; i++) {
+        document.getElementsByClassName('side-bar-item')[i].style.height = "7vw";
+        document.getElementsByClassName('side-bar-item')[i].style.width = "7vw";
+    }
+}
+
