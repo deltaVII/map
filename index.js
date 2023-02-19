@@ -21,7 +21,7 @@ let globalMouseX;
 let globalMouseY;
 
 // Переменные скаляции
-let curentZoom = 34
+let curentZoom = 18
 const zoomUnit = 8
 const minZoom = 10 
 const maxZoom = 50
@@ -139,21 +139,17 @@ handleZoom(0)
 let windowLet=document.getElementsByClassName("side-bar-item")
 
 windowWi=window.innerWidth;
-console.log(windowWi);
 windowHe=window.innerHeight;
-console.log(windowHe);
-
-console.log(windowLet)
 if (windowHe>windowWi) {
     for (let i=0; i!=6; i++) {
-    document.getElementsByClassName('side-bar-item')[i].style.height = "7vh";
-    document.getElementsByClassName('side-bar-item')[i].style.width = "7vh";
+        document.getElementsByClassName('side-bar-item')[i].style.height = "7vh";
+        document.getElementsByClassName('side-bar-item')[i].style.width = "7vh";
 }
 }
 else{
     for (let i=0; i!=6; i++) {
-        document.getElementsByClassName('side-bar-item')[i].style.height = "7vw";
-        document.getElementsByClassName('side-bar-item')[i].style.width = "7vw";
+        document.getElementsByClassName('side-bar-item')[i].style.height = "6vw";
+        document.getElementsByClassName('side-bar-item')[i].style.width = "6vw";
     }
 }
 
