@@ -77,7 +77,7 @@ function handleFloorChange(increment){
     && (curentFloor + increment) <= maxFloor){
         curentFloor += increment
         floorCounter.textContent = curentFloor 
-        // floor set logic
+        // логика смены этажей
 
 
         karta1.style.backgroundImage=mass[curentFloor-1]
