@@ -42,7 +42,14 @@ let mass = mass1
 let shiftX = 0
 let shiftY = 0
 
-
+const url = new URL(
+    window.location.href
+  )
+let urletag=url.searchParams.get('URLetag')
+let urltochka=url.searchParams.get('URLtochka')
+handleFloorChange(urletag-1)
+console.log(curentFloor)
+// смена этажа по переменой из урла    URLetag=10&URLtochka=10
 // Функции
 const setupElements = () => {
     zoomCounter.textContent = curentZoom/100 + 'x'
@@ -84,6 +91,7 @@ function handleFloorChange(increment){
         console.log(curentFloor,karta1)
         
     } 
+    console.log(curentFloor, increment)
 }
 
 function mapScroll(x, y) {    
@@ -152,4 +160,10 @@ else{
         document.getElementsByClassName('side-bar-item')[i].style.width = "6vw";
     }
 }
+
+
+
+
+
+
 
